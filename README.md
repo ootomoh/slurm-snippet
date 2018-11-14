@@ -1,0 +1,1 @@
+# Neosnippet Slurm jobscript extension
