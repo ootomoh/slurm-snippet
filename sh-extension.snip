@@ -1,0 +1,12 @@
+snippet     slurm
+options     head
+	#!/bin/bash
+	#SBATCH -p ${1:node_group_name}
+	#SBATCH -n 1
+	#SBATCH -J ${2:job_name}
+
+	. /etc/profile.d/modules.sh
+	# module load cuda ...
+
+	# ./a.out
+	${0}
